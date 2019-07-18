@@ -1,0 +1,6 @@
+{
+  "exec": "babel-node ./server/rest/index.js",
+  "ext": "js",
+  "verbose": true,
+  "watch": ["server/**/*.js"]
+}

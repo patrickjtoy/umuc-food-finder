@@ -1,0 +1,21 @@
+.Dropdown-placeholder {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Dropdown-menu {
+  max-height: 200px;
+
+  @media (max-height: 825px) {
+    max-height: 150px;
+  }
+
+  @media (max-height: 750px) {
+    max-height: 125px;
+  }
+
+  @media (max-height: 640px) {
+    max-height: 100px;
+  }
+}

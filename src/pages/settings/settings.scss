@@ -1,0 +1,20 @@
+@import '../../lib/styles/breakpoints.scss';
+
+.navLink {
+  color: #fff;
+}
+
+.card-header {
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+
+  &__heading {
+    font-size: 4rem;
+
+    @include lg {
+      font-size: 5rem;
+    }
+  }
+}

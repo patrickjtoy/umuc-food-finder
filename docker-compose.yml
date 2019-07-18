@@ -1,0 +1,18 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+    image: umuc-food-finder
+    depends_on:
+      - db
+    env_file:
+      - .env.default
+    mem_reservation: "256m"
+    ports:
+      - 3000
+
+  db:
+    image: postgres
+    expose:
+      - '5432'
